@@ -1,6 +1,7 @@
 import React from 'react';
 import { words } from '../constants/index.js';
 import Button from '../components/Button.jsx';
+import HeroExperience from '../components/heroModels/HeroExperience.jsx';
 
 
 const Hero = () => {
@@ -10,7 +11,7 @@ const Hero = () => {
             <img src="/images/bg.png" alt = "" />
         </div>
         <div className='hero-layout'>
-            <header classNamw="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
+            <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
                 <div className="flex flex-col gap-7">
                     <div className='hero-text'>
                         <h1>Shaping 
@@ -34,6 +35,11 @@ const Hero = () => {
                     <Button className="md:w-80 md:h-16 w-60 h-12" id="button" text="See my Work"/>
                 </div>
             </header>
+            <figure>
+                <div className="hero-3d-layout">
+                    <HeroExperience />
+                </div>
+            </figure>
         </div>
         </section> 
     )
