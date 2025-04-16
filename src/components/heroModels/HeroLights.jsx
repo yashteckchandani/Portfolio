@@ -4,7 +4,7 @@ import * as THREE from 'three';
 const HeroLights = () => {
     return(
         <>
-        <ambientLight intensity={1} color="#ffffff" />
+        <ambientLight intensity={1.1} color="#ffffff" />
         <spotLight 
         position={[4,2,6]}
         intensity={150}

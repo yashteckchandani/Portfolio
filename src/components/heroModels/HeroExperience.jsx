@@ -23,7 +23,7 @@ const HeroExperience = () => {
             <EffectComposer>
                 <Bloom luminanceThreshold={0} luminanceSmoothing={0.9} intensity={1.5} />
             </EffectComposer>
-            <group scale = {isMobile ? 2.2 : 3} position={[0,0,0]} rotation={[0,-Math.PI/9,0]}>
+            <group scale = {isMobile ? 2.2 : 3} position={!isMobile ? [0,0,0] : [0,-1,0]} rotation={[0,-Math.PI/9,0]}>
             <Myavatar />
             </group>
             
