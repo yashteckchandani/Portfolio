@@ -3,8 +3,8 @@ import { useGLTF, useTexture } from '@react-three/drei'
 import * as THREE from 'three'
 
 export function Room(props) {
-  const matcapTexture = new useTexture('/images/textures/mat1.png');
-  const { nodes, materials } = useGLTF('/models/optimized-room.glb')
+  const matcapTexture = new useTexture('./images/textures/mat1.png');
+  const { nodes, materials } = useGLTF('./models/optimized-room.glb')
 
   const curtainMaterial = new THREE.MeshPhongMaterial({color:'#d90429'})
   const bodyMaterial = new THREE.MeshPhongMaterial({map:matcapTexture})
@@ -46,4 +46,4 @@ export function Room(props) {
   )
 }
 
-useGLTF.preload('/models/optimized-room.glb')
+useGLTF.preload('./models/optimized-room.glb')

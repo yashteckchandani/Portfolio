@@ -35,7 +35,7 @@ const ShowcaseSection = () => {
                 <div className='showcaselayout'>
                     <div className='first-project-wrapper' ref={project1Ref}>
                         <div className='image-wrapper'>
-                            <img src="/images/proj1.png" alt="chatapp" />
+                            <img src="./images/proj1.png" alt="chatapp" />
                         </div>
                         <div className='text-content'>
                             <h2>No more worry for complex sql queries. Get Queries on your fingertips with a simple prompt</h2>
@@ -45,13 +45,13 @@ const ShowcaseSection = () => {
                     <div className='project-list-wrapper overflow-hidden'>
                         <div className='project' ref={project2Ref}>
                             <div className='image-wrapper bg-[#ffe7eb]'>
-                                <img src="/images/proj2.png" alt="project2" />
+                                <img src="./images/proj2.png" alt="project2" />
                             </div>
                             <h2>Facial detetction based attendance marking</h2>
                         </div>
                         <div className='project' ref={project3Ref}>
                             <div className='image-wrapper bg-[#ffefdb]'>
-                                <img src="/images/proj3.png" alt="project3" />
+                                <img src="./images/proj3.png" alt="project3" />
                             </div>
                             <h2>Cycle Rental System and tracking System</h2>
                         </div>
