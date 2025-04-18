@@ -106,3 +106,21 @@ export const expCards = [
         rotation: [0, 0, 0],
       },
   ];
+
+  export const socialImgs = [
+    {
+      name: "insta",
+      imgPath: "./images/insta.png",
+      url:"https://www.instagram.com/y.a.s_hh?igsh=MWJpbG50NmRpMHN6Nw%3D%3D&utm_source=qr"
+    },
+    {
+      name: "github",
+      imgPath: "./images/github.png",
+      url:"https://github.com/yashteckchandani"
+    },
+    {
+      name: "linkedin",
+      imgPath: "./images/linkedin.png",
+      url:"https://www.linkedin.com/in/yash-teckchandani-198490210/"
+    },
+  ];
