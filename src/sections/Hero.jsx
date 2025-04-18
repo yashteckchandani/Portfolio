@@ -5,6 +5,7 @@ import HeroExperience from '../components/heroModels/HeroExperience.jsx';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import AnimatedCounter from '../components/AnimatedCounter.jsx';
+import TitleHeader from '../components/TitleHeader.jsx';
 
 
 const Hero = () => {
@@ -29,7 +30,7 @@ const Hero = () => {
                                     {words.map((word)=>(
                                         <span key={word.text} className='flex items-center md:gap-3 gap-1 pb-2'>
                                             <img src={word.imgPath} alt={word.text} className='xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50' />
-                                            <span >{word.text}</span>
+                                            <span style={{ color: word.color }}>{word.text}</span>
                                         </span>
                                     ))}
                                 </span>
@@ -50,6 +51,7 @@ const Hero = () => {
                 </div>
             </figure>
         </div>
+        <TitleHeader title="Education" sub="🏫 Built on Knowledge"/>
         <AnimatedCounter />
         </section> 
     )

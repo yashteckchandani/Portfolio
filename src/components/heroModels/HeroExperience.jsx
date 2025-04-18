@@ -17,13 +17,13 @@ const HeroExperience = () => {
 
     return (
         <Canvas camera={{position: [0, 0, 15], fov: 45}}>
-            <OrbitControls enablePan={false} enableZoom={!isTablet} maxDistance={20} minDistance={5} minPolarAngle={Math.PI/5} maxPolarAngle={Math.PI/2} />
+            <OrbitControls enablePan={false} enableZoom={!isTablet} maxDistance={20} minDistance={10} minPolarAngle={Math.PI/5} maxPolarAngle={Math.PI/2} />
             <HeroLights />
             <Particles count={100} />
             <EffectComposer>
                 <Bloom luminanceThreshold={0} luminanceSmoothing={0.9} intensity={1.5} />
             </EffectComposer>
-            <group scale = {isMobile ? 2.2 : 3} position={!isMobile ? [0,0,0] : [0,-1,0]} rotation={[0,-Math.PI/9,0]}>
+            <group scale = {isMobile ? 2.2 : 4.5} position={!isMobile ? [0,0,0] : [0,-1,0]} rotation={[0,-Math.PI/9,0]}>
             <Myavatar />
             </group>
             

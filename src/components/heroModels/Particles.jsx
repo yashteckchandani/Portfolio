@@ -38,7 +38,7 @@ const Particles = ({ count = 200 }) => {
           key={i}
           ref={(el) => (refs.current[i] = el)}
           position={p.position}
-          fontSize={0.05}
+          fontSize={0.07}
           anchorX="center"
           anchorY="middle"
           material-toneMapped={false} // important for bloom
